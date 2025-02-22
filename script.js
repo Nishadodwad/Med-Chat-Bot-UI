@@ -8,7 +8,7 @@ function sendMessage() {
     chatBox.innerHTML += userMessage;
 
     // Send request to Python backend (change the URL to your deployed backend)
-    fetch("https://medical-chatbot.onrender.com/chat", { 
+    fetch("https://med-chat-bot-api.onrender.com/", { 
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query: userInput })
